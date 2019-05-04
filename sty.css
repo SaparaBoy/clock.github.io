@@ -53,10 +53,12 @@
 #min {
   z-index: 2;
   height: 70%;
+  transition: 0.3s;
 }
 #hour {
   z-index: 1;
   height: 60%;
+  transition: 0.3s;
 }
 .showsec {
   position: relative;
