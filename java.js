@@ -37,5 +37,10 @@ function secshow() {
   min.style.transform = `translate(-50%, -50%) rotate(${aryofsec[k]}deg)`;
   nowmin.textContent = k;
   hour.style.transform = `translate(-50%, -50%) rotate(${aryofhour[l]}deg)`;
-  nowhour.textContent = l;
+
+    if (l != 0) {
+    nowhour.textContent = l;
+  } else {
+    nowhour.textContent = 12;
+  }
 }
