@@ -19,7 +19,7 @@ for (var i = 1; i <= 12; i++) {
   degOfhour = degOfhour + 30;
   //console.log(aryofhour[i]);
 }
-//
+aryofhour[0] = 360;
 setInterval(secshow, 1000);
 var j;
 function secshow() {
