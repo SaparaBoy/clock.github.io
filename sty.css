@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.clockbody {
+  background: linear-gradient(
+    117.54457498672775deg,
+    rgba(120, 163, 255, 1) 23.2984375%,
+    rgba(119, 162, 254, 1) 23.2984375%,
+    rgba(77, 89, 214, 1) 82.73593749999999%
+  );
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 10px solid rgb(255, 255, 255);
+  box-shadow: 0 10px 50px rgba(77, 89, 214, 0.4);
+  border-radius: 50%;
+  width: 270px;
+  height: 270px;
+}
+#sec,
+#min,
+#hour {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 5px;
+  transform: translate(-50%, -50%) rotate(0deg);
+  display: flex;
+}
+#blank {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  background: linear-gradient(
+    117.54457498672775deg,
+    rgba(255, 255, 255, 1) 23.2984375%,
+    rgba(254, 254, 254, 1) 23.2984375%,
+    rgba(196, 196, 196, 1) 82.73593749999999%
+  );
+  z-index: 4;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+#sec {
+  z-index: 3;
+  height: 80%;
+}
+#min {
+  z-index: 2;
+  height: 70%;
+}
+#hour {
+  z-index: 1;
+  height: 60%;
+}
+.showsec {
+  position: relative;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+}
+#color1 {
+  background: rgb(48, 48, 48);
+}
+#color2 {
+  background: rgba(255, 255, 255, 1);
+}
+#color3 {
+  background: rgba(219, 219, 219, 1);
+}
+h4 {
+  font-weight: normal;
+  font-size: 0.7em;
+  mix-blend-mode: difference;
+}
+#wsec,
+#wmin,
+#whour {
+  width: 5px;
+  height: 50%;
+  position: relative;
+  top: 0;
+  border-radius: 50px;
+}
+#wsec {
+  background: linear-gradient(
+    117.54457498672775deg,
+    rgba(94, 94, 94, 1) 23.2984375%,
+    rgba(93, 93, 93, 1) 23.2984375%,
+    rgb(61, 61, 61) 82.73593749999999%
+  );
+}
+#wmin {
+  background: linear-gradient(
+    117.54457498672775deg,
+    rgba(255, 255, 255, 1) 23.2984375%,
+    rgba(254, 254, 254, 1) 23.2984375%,
+    rgba(212, 212, 212, 1) 82.73593749999999%
+  );
+}
+#whour {
+  background: linear-gradient(
+    117.54457498672775deg,
+    rgba(219, 219, 219, 1) 23.2984375%,
+    rgba(218, 218, 218, 1) 23.2984375%,
+    rgba(145, 145, 145, 1) 82.73593749999999%
+  );
+}
+.box {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+img {
+  position: absolute;
+  width: 1600px;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+}
